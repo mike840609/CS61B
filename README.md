@@ -24,7 +24,24 @@ description: Berkeley  CS61B note
   * If you write a program and distribute the compiled version, it is \(mostly\) guaranteed to be free of any type errors. This makes your code more reliable.
   * Every variable, parameter, and function has a declared type, making it easier for a programmer to understand and reason about code. 
   * Code is verbose
-  * Code is less general. There is a way around this in Java\(generics\).
+  * Code is less general. There is a way around this in Java\(generics\). 
+* Curly braces are very important in Java 
+  * if for statement without braces, it will work only next line.
+  * Visualizer\([https://cscircles.cemc.uwaterloo.ca/java\_visualize/\#code=public+class+PrintAbsoluteValue+%7B%0A+++public+static+void+main\(String%5B%5D+args\)+%7B%0A++++++int+x+%3D+5%3B%0A++++++%0A++++++if+\(x+%3C+0\)+%0A++++++++System.out.println\(%22I+should+negate+X%22\)%3B%0A++++++++x+%3D+-x%3B%0A++++++%0A++++++System.out.println\(x\)%3B%0A+++%7D%0A%7D&mode=edit](https://cscircles.cemc.uwaterloo.ca/java_visualize/#code=public+class+PrintAbsoluteValue+%7B%0A+++public+static+void+main%28String%5B%5D+args%29+%7B%0A++++++int+x+%3D+5%3B%0A++++++%0A++++++if+%28x+%3C+0%29+%0A++++++++System.out.println%28%22I+should+negate+X%22%29%3B%0A++++++++x+%3D+-x%3B%0A++++++%0A++++++System.out.println%28x%29%3B%0A+++%7D%0A%7D&mode=edit)\)
+
+```java
+public class PrintAbsoluteValue {
+   public static void main(String[] args) {
+      int x = 5;      
+      if (x < 0) 
+        System.out.println("I should negate X");
+        x = -x;      
+      System.out.println(x);
+   }
+}
+```
+
+
 
 
 
